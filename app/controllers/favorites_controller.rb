@@ -1,5 +1,6 @@
 class FavoritesController < ApplicationController
-
+	before_action :authenticate_user!
+  
 	def create
 			book = Book.find(params[:book_id])
 			# この書き方いまいち不明
