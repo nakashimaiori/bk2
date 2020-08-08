@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   	resource :favorites, only: [:create, :destroy]
   	resources :book_comments, only: [:create, :destroy]
   end
-  root'home#top'
+
+  root 'home#top'
   get 'home/about' => 'home#about'
+  get 'search' => 'search#search'
 end

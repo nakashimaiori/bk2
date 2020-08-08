@@ -24,3 +24,7 @@ Things you may want to cover:
 * ...
 
 bokers2 練習用
+
+ destroy_book_#{@book.id}"
+
+  edit_book_#{@book.id}"
